@@ -1,0 +1,24 @@
+@use "../2-tools/functions" as f;
+
+// Typography
+$font-family-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, sans-serif;
+$font-family-serif: "DM Serif Display", Georgia, "Times New Roman", serif;
+
+// Font weights
+$fw-regular: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+
+// Colors
+$color-primary: #bd0029;
+$color-primary-hover: #85031f;
+$color-opacity: f.opacity(#fff, 0.8);
+$color-background: #f9f9f9;
+$color-white: #fff;
+$color-black: #000;
+
+// Breakpoints (max-width)
+$bp-tablet: 1024px;
+$bp-mobile: 768px;
