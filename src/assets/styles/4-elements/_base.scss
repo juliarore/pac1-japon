@@ -1,0 +1,31 @@
+@use "../1-settings/variables" as v;
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: v.$font-family-sans;
+    font-weight: v.$fw-regular;
+    background-color: v.$color-background;
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: v.$font-family-serif;
+    font-weight: v.$fw-bold;
+}
+
+a,
+a.link {
+    text-decoration: none;
+    color: v.$color-primary;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: v.$color-primary-hover;
+    }
+}
+
