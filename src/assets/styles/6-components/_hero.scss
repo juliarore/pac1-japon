@@ -1,0 +1,29 @@
+@use "../1-settings/variables" as v;
+@use "../2-tools/functions" as f;
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+    padding-inline: 1.5rem;
+    margin-inline: auto;
+    text-align: center;
+    background-image: url('../images/hero-img.jpg');
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 2rem;
+        font-size: f.rem(48);
+        color: v.$color-primary;
+    }
+
+    &__subtitle {
+        margin-bottom: 3rem;
+        font-size: f.rem(20);
+        color: v.$color-black;        
+    }
+}    
