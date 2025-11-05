@@ -10,3 +10,8 @@
 @function rem($px, $base: 16) {
   @return math.div($px, $base) * 1rem;
 }
+
+// Function to darken color
+@function darken-color($color, $amount: 10%) {
+    @return color.adjust($color, $lightness: -$amount);
+}
