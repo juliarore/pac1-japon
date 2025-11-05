@@ -1,0 +1,32 @@
+@use "../1-settings/variables" as v;
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: v.$color-opacity;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+
+    &__list {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+    }
+
+    &__link {
+        color: v.$color-black;
+
+        &:hover {
+            color: v.$color-primary;
+        }
+    }
+
+}
