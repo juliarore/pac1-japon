@@ -9,14 +9,29 @@
     backdrop-filter: blur(6px);
 
     &__nav {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem 1.5rem;
+        padding: 1.5rem 5rem;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        height: 2.25rem; 
+        width: auto;
+        display: block;
     }
 
     &__list {
         display: flex;
+        justify-content: center;
         gap: 3rem;
         list-style: none;
     }
