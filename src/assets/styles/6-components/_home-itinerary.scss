@@ -1,7 +1,7 @@
 @use "../2-tools/functions" as f;
 @use "../1-settings/variables" as v;
 
-.itinerary {
+.home-itinerary {
     padding-block: 3rem;
     justify-content: center;
 
@@ -27,7 +27,7 @@
         }
     }
 
-    .itinerary__button {
+    &__button {
         text-align: center;
     }
 }
