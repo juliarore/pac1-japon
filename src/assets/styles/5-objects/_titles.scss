@@ -7,3 +7,11 @@
   font-weight: v.$fw-semi-bold;
   color: v.$color-primary;
 }   
+
+.o-title--h3 {
+  margin-bottom: 1rem;
+  font-family: v.$font-family-sans;
+  font-size: f.rem(24);
+  font-weight: v.$fw-semi-bold;
+  color: v.$color-black;
+}
