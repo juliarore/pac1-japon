@@ -1,0 +1,12 @@
+@use "../1-settings/variables" as v;
+
+.footer {
+    padding: 4rem 0;
+    color: v.$color-white;
+    text-align: center;
+    background-color: v.$color-primary;
+
+    &__text {
+        margin-bottom: .5rem;
+    }
+}
