@@ -5,14 +5,15 @@
   text-align: center;
 
   &__intro {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
     justify-items: center;
+    padding: 0;
   }
 
   &__item {
