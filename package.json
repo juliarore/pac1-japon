@@ -20,7 +20,7 @@
         "browsers": "last 2 versions, > 0.5%, not dead"
       }
     }
-  },  
+  },
   "keywords": [],
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   "author": {
     "name": "Júlia Romero Remacha",
     "email": "jromerorem@uoc.edu"
-  },  
+  },
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
@@ -42,5 +42,8 @@
     "posthtml": "^0.16.7",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
   }
 }
