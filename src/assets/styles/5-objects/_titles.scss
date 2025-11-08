@@ -1,0 +1,9 @@
+@use "../2-tools/functions" as f;
+@use "../1-settings/variables" as v;
+
+.o-title--h2 {
+  margin-bottom: 2rem;
+  font-size: f.rem(36);
+  font-weight: v.$fw-semi-bold;
+  color: v.$color-primary;
+}   

@@ -1,0 +1,31 @@
+@use "../1-settings/variables" as v;
+
+.travel-reasons {
+  padding-block: 3rem;
+  text-align: center;
+
+  &__intro {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.25rem;
+    justify-items: center;
+  }
+
+  &__item {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__icon {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: v.$color-primary;
+  }
+}
+
+
