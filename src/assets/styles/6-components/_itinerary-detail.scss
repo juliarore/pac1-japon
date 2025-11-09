@@ -5,11 +5,10 @@
 .itinerary-detail {
     padding-block: 3rem;
     justify-content: center;
-    margin-inline: auto; 
 
     &__stage {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 1.3fr 1fr;
         grid-template-areas: "img content";
         gap: 4rem;
         align-items: start;
@@ -17,7 +16,7 @@
         text-align: justify;
 
         &--reverse {
-            grid-template-columns: 40% 60%;
+            grid-template-columns: 1fr 1.3fr;
             grid-template-areas: "content img";
         }
     }
