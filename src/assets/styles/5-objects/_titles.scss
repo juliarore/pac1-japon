@@ -1,12 +1,22 @@
 @use "../2-tools/functions" as f;
 @use "../1-settings/variables" as v;
 
-.o-title--h2 {
+h1,
+h2 {
   margin-bottom: 2rem;
+  font-family: v.$font-family-serif;
+  color: v.$color-primary;
+}
+
+.o-title--h1 {
+  font-size: f.rem(48);
+  font-weight: v.$fw-bold;
+}
+
+.o-title--h2 {
   font-size: f.rem(36);
   font-weight: v.$fw-semi-bold;
-  color: v.$color-primary;
-}   
+}
 
 .o-title--h3 {
   margin-bottom: 1rem;
