@@ -1,0 +1,51 @@
+@use "../1-settings/variables" as v;
+@use "../2-tools/functions" as f;
+
+
+.itinerary-detail {
+    padding-block: 3rem;
+    justify-content: center;
+    margin-inline: auto; 
+
+    &__stage {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "img content";
+        gap: 4rem;
+        align-items: start;
+        margin-bottom: 5rem;
+        text-align: justify;
+
+        &--reverse {
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "content img";
+        }
+    }
+
+    &__link {
+        grid-area: img;
+        display: block;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        margin-top: 1rem;
+        display: inline-block;
+    }
+}
