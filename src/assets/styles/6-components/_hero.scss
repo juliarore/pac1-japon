@@ -2,7 +2,8 @@
 @use "../2-tools/functions" as f;
 
 .hero,
-.hero-itinerary {
+.hero-itinerary,
+.hero-tokio {
     position: relative;
     display: flex;
     align-items: center;
@@ -14,6 +15,19 @@
     text-align: center;
     background-position: center;
     background-size: cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: f.opacity(v.$color-white, 0.2);
+        z-index: 1;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2; 
+    }
 }
 
 .hero {
@@ -22,11 +36,9 @@
 
 .hero-itinerary {
     background-image: url('../images/hero-itinerary.jpg');
-
-    &__subtitle {
-        font-family: v.$font-family-serif;
-        text-align: center;
-        font-size: f.rem(30);
-    }
-
 }
+
+.hero-tokio {
+    background-image: url('../images/hero-tokio.jpg');
+    background-position: center top;
+} 
