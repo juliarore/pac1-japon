@@ -1,8 +1,8 @@
 @use "../2-tools/functions" as f;
 @use "../1-settings/variables" as v;
 
-h1,
-h2 {
+.o-title--h1,
+.o-title--h2 {
   margin-bottom: 2rem;
   font-family: v.$font-family-serif;
   color: v.$color-primary;
@@ -23,5 +23,11 @@ h2 {
   font-family: v.$font-family-sans;
   font-size: f.rem(24);
   font-weight: v.$fw-semi-bold;
+  color: v.$color-black;
+}
+
+.subtitle {
+  margin-bottom: 3rem;
+  font-size: f.rem(20);
   color: v.$color-black;
 }
