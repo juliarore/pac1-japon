@@ -1,7 +1,8 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
 
-.hero {
+.hero,
+.hero-itinerary {
     position: relative;
     display: flex;
     align-items: center;
@@ -11,19 +12,21 @@
     padding-inline: 1.5rem;
     margin-inline: auto;
     text-align: center;
-    background-image: url('../images/hero-img.jpg');
     background-position: center;
     background-size: cover;
+}
 
-    &__title {
-        margin-bottom: 2rem;
-        font-size: f.rem(48);
-        color: v.$color-primary;
-    }
+.hero {
+    background-image: url('../images/hero-img.jpg');
+}
+
+.hero-itinerary {
+    background-image: url('../images/hero-itinerary.jpg');
 
     &__subtitle {
-        margin-bottom: 3rem;
-        font-size: f.rem(20);
-        color: v.$color-black;        
+        font-family: v.$font-family-serif;
+        text-align: center;
+        font-size: f.rem(30);
     }
-}    
+
+}
