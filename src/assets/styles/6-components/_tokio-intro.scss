@@ -1,0 +1,61 @@
+@use "../1-settings/variables" as v;
+@use "../2-tools/functions" as f;
+
+.tokio-intro {
+    padding-block: 3rem;
+    margin-inline: auto;
+    text-align: justify;
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+
+    &__swiper {
+        width: 100%;
+        height: f.rem(500);
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    &__pagination {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: f.rem(6);
+
+        .swiper-pagination-bullet {
+            position: static;
+            background-color: v.$color-white;
+            bottom: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: v.$color-primary;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        color: v.$color-white;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+        color: v.$color-primary;
+        transform: translateY(-50%) scale(1.1);
+        }
+    }
+}
