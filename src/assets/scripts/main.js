@@ -1,1 +1,1 @@
-import './tokio-intro-swiper.js';
+import './city-intro-swiper.js';
