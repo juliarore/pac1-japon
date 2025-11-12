@@ -1,19 +1,37 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
 
+
 .button,
-a.button {
+a.button, 
+.button-secondary,
+a.button-secondary {
     padding: .5rem 1.5rem;
     font-family: v.$font-family-sans;
     font-size: f.rem(18);
-    color: v.$color-white;
     cursor: pointer;
-    background-color: v.$color-primary;
-    border: 0px;
     border-radius: 10px;
     transition: background-color 0.2s ease;
+}
 
+.button,
+a.button {
+    color: v.$color-white;
+    background-color: v.$color-primary;
+    border: 0px;
+    
     &:hover {
         background-color: v.$color-primary-hover;
+    }
+}  
+
+.button-secondary,
+a.button-secondary {
+    color: v.$color-primary;
+    border: 1px solid v.$color-primary;
+
+    &:hover {
+        background-color: v.$color-primary;
+        color: v.$color-white;
     }
 }  

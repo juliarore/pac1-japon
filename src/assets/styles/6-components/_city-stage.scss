@@ -43,15 +43,24 @@
         margin-bottom: 1rem;
     }
 
-    &__button {
-        margin-top: 1rem;
-        align-self: flex-end;
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    &__button-prev,
+    &__button-next {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
 
     &__iframe {
         width: 100%;
         height: f.rem(500);
         border-radius: .5rem;
-        margin-bottom: 2rem;
+        margin: .75rem 0 3rem 0;
     }
 }
