@@ -47,4 +47,11 @@
         margin-top: 1rem;
         align-self: flex-end;
     }
+
+    &__iframe {
+        width: 100%;
+        height: f.rem(500);
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+    }
 }
