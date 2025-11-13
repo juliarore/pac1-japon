@@ -3,10 +3,20 @@
         <a href="/" class="header__logo">
             <img src="./assets/images/logo.png" alt="Logotipo Descubriendo Japón" class="header__img">
         </a>
-
-        <ul class="header__list">
+        
+        <ul class="header__list" id="nav-menu">
             <li><a href="./index.html" class="header__link">Inicio</a></li>
-            <li><a href="./itinerary.html" class="header__link">Itinerario</a></li>
+
+            <li class="header__item header__item--has-submenu">
+                <a href="./itinerary.html" class="header__link">Itinerario</a>
+                <i class="fa-solid fa-caret-down header__icon-dropdown"></i>
+                <ul class="header__submenu">
+                    <li><a href="./tokio.html" class="header__sublink">Tokio (días 1-5)</a></li>
+                    <li><a href="./kioto-nara.html" class="header__sublink">Kioto y Nara (días 6-10)</a></li>
+                    <li><a href="/" class="header__sublink">Osaka (días 11-15)</a></li>
+                </ul>
+            </li>
+
             <li><a href="/" class="header__link">Recursos</a></li>
             <li><a href="/" class="header__link">Contacto</a></li>
         </ul>
