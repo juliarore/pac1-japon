@@ -1,5 +1,6 @@
 @use "../2-tools/functions" as f;
 @use "../1-settings/variables" as v;
+@use "../2-tools/mixins" as m;
 
 .o-title--h1,
 .o-title--h2 {
@@ -11,11 +12,27 @@
 .o-title--h1 {
   font-size: f.rem(48);
   font-weight: v.$fw-bold;
+
+  @include m.respond(mobile) {
+    font-size: f.rem(32);
+  }
+
+  @include m.respond(tablet) {
+    font-size: f.rem(40);
+  }
 }
 
 .o-title--h2 {
   font-size: f.rem(36);
   font-weight: v.$fw-semi-bold;
+
+  @include m.respond(mobile) {
+    font-size: f.rem(26);
+  }
+
+  @include m.respond(tablet) {
+    font-size: f.rem(30);
+  }
 }
 
 .o-title--h3 {
@@ -24,6 +41,14 @@
   font-size: f.rem(24);
   font-weight: v.$fw-semi-bold;
   color: v.$color-black;
+
+  @include m.respond(mobile) {
+    font-size: f.rem(18);
+  }
+
+  @include m.respond(tablet) {
+    font-size: f.rem(20);
+  }
 }
 
 .subtitle {
@@ -31,4 +56,12 @@
   font-family: v.$font-family-serif;
   font-size: f.rem(26);
   color: v.$color-black;
+
+  @include m.respond(mobile) {
+    font-size: f.rem(20);
+  }
+
+  @include m.respond(tablet) {
+    font-size: f.rem(22);
+  }
 }
