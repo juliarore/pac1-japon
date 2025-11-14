@@ -163,6 +163,11 @@
                 display: block;
             }
         }
+
+        @include m.respond(tablet) {
+            display: block;
+            margin-top: 2rem;
+        }
     }
 
     &__item--has-submenu:hover .header__submenu {
