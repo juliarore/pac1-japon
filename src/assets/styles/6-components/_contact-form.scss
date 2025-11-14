@@ -1,0 +1,64 @@
+@use "../1-settings/variables" as v;
+@use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
+
+.contact{
+    padding-block: 2rem;
+
+    &__text {
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        @include m.respond(mobile) {
+            text-align: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: f.rem(600);
+        margin-block: 2rem;
+    }
+
+    &__itemform {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        font-weight: v.$fw-semi-bold;
+        margin-bottom: .25rem;
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+        padding: .6rem .9rem;
+        font-family: v.$font-family-sans;
+        font-size: f.rem(16);
+        border: 1px solid v.$color-border-light;
+        border-radius: .5rem;
+        transition: border-color .2s ease;
+
+        &:focus {
+        outline: none;
+        border-color: v.$color-primary;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        gap: 0.5rem;
+
+        .contact__input {
+        width: auto;
+        margin: 0;
+        }
+    }
+}

@@ -6,7 +6,8 @@
 .hero-itinerary,
 .hero-tokio,
 .hero-kioto-nara,
-.hero-resources {
+.hero-resources,
+.hero-contact {
     position: relative;
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: f.opacity(v.$color-white, 0.2);
+        background: f.opacity(v.$color-white, 0.3);
         z-index: 1;
     }
 
@@ -59,12 +60,21 @@
 .hero-resources {
     background-image: url('../images/hero-resources.jpg');
     background-position: center top;
+
+    @include m.respond(mobile) {
+        background-position: left center;
+    }
 }
 
+.hero-contact {
+    background-image: url('../images/hero-contact.jpg');
+    background-position: center top;
+}
 
 .hero-itinerary__subtitle,
 .hero-tokio__subtitle,
 .hero-kioto-nara__subtitle,
-.hero-resources__subtitle {
+.hero-resources__subtitle,
+.hero-contact__subtitle {
     margin-bottom: 0;
 } 
