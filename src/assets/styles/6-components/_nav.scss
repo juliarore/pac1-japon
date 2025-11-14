@@ -1,5 +1,6 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
 
 .header {
     position: fixed;
@@ -12,9 +13,20 @@
     &__nav {
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: center;    
+        align-items: center;    
         justify-content: center;
         padding: 1.5rem 8rem;
+
+        @include m.respond(tablet) {
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+
+        @include m.respond(tablet) {
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
     }
 
     &__logo {
@@ -22,21 +34,54 @@
         left: 8rem;
         display: flex;
         align-items: center;
+
+        @include m.respond(tablet) {   
+            position: static;
+        }
     }
 
     &__img {
         height: 2.25rem; 
         width: auto;
         display: block;
+
+        @include m.respond(tablet) {
+            height: 2rem;
+        }
+
+        @include m.respond(tablet) {
+            height: 2rem;
+        }
     }
 
     &__list {
         display: flex;
-        justify-content: center;
         gap: 3rem;
         list-style: none;
-    }
 
+        @include m.respond(tablet) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 70vw;
+            max-width: f.rem(300);
+            height: 100vh;
+            padding: 6rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: v.$color-white;
+            transform: translateX(100%);
+            transition: transform .3s ease;
+            z-index: 999;
+        }          
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+    
+    
     &__link {
         color: v.$color-black;
 
@@ -50,8 +95,17 @@
     }
 
     &__icon-dropdown {
-        margin-left: 0.25rem;
         color: v.$color-primary;
+        transition: transform 0.3s ease;
+        
+        @include m.respond(tablet) {
+            cursor: pointer;
+        }
+        transition: transform 0.3s ease;
+        
+        @include m.respond(tablet) {
+            cursor: pointer;
+        }
     }
     
     &__submenu {
@@ -68,8 +122,24 @@
         min-width: f.rem(250);
         opacity: 0;
         visibility: hidden;
-        transform: translateY(0);
         transition: all 0.3s ease;
+
+        @include m.respond(tablet) {
+            position: static;    
+            display: block;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease;
+        }
+
+        &--open {
+            @include m.respond(tablet) {
+                max-height: 500px;
+            }
+        }
     }
 
     &__submenu li {
@@ -84,11 +154,49 @@
         &:hover {
             color: v.$color-primary;
         }
+
+        &-hidden {
+            display: none;
+            font-weight: v.$fw-semi-bold;
+
+            @include m.respond(tablet) {
+                display: block;
+            }
+        }
     }
 
     &__item--has-submenu:hover .header__submenu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
+    }
+
+        /* Burger menu*/
+    &__burger {
+        display: none;
+        
+        @include m.respond(tablet) {
+            display: flex;
+            z-index: 1002;
+            flex-direction: column;
+            gap: .3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: f.rem(32);
+
+            span {
+                display: block;
+                width: 100%;
+                height: f.rem(3);
+                background: v.$color-black;
+                border-radius: f.rem(2);
+                transition: all 0.3s ease;
+            }
+        }
+        
+        &.active span {
+            background: v.$color-primary;
+        }
     }
 }
