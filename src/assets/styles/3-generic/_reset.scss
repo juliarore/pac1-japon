@@ -5,5 +5,11 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
 }
