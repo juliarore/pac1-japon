@@ -1,5 +1,6 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
 
 .hero,
 .hero-itinerary,
@@ -49,8 +50,11 @@
     background-image: url('../images/itinerary-kioto.jpg');
 
     &__line-break {
-        display: block;
+        @include m.respond(mobile) {
+            display: block;
+        }
     }
+
 }
 
 .hero-resources {
