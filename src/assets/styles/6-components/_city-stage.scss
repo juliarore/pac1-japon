@@ -84,5 +84,9 @@
         @include m.respond(mobile) {
             height: f.rem(300);
         }
+        
+        @include m.respond(tablet) {
+            height: f.rem(400);
+        }
     }
 }
