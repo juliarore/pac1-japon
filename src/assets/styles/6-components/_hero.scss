@@ -47,9 +47,21 @@
 
 .hero-kioto-nara {
     background-image: url('../images/itinerary-kioto.jpg');
+
+    &__line-break {
+        display: block;
+    }
 }
 
 .hero-resources {
     background-image: url('../images/hero-resources.jpg');
     background-position: center top;
 }
+
+
+.hero-itinerary__subtitle,
+.hero-tokio__subtitle,
+.hero-kioto-nara__subtitle,
+.hero-resources__subtitle {
+    margin-bottom: 0;
+} 

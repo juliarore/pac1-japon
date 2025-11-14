@@ -1,5 +1,6 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
 
 
 .city-stage {
@@ -15,6 +16,14 @@
         align-items: start;
         margin-bottom: 4rem;
         text-align: justify;
+
+        @include m.respond(mobile) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "img"
+                "content";
+            gap: 2rem;
+        }
     }
 
     &__presentation {
@@ -33,6 +42,10 @@
     &__caption {
         text-align: center;
         font-size: f.rem(14);
+
+        @include m.respond(mobile) {
+            font-size: f.rem(13);
+        }
     }
 
     &__content {
@@ -47,6 +60,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include m.respond(mobile) {
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 
     &__button-prev,
@@ -62,5 +80,9 @@
         height: f.rem(500);
         border-radius: .5rem;
         margin: .75rem 0 3rem 0;
+
+        @include m.respond(mobile) {
+            height: f.rem(300);
+        }
     }
 }

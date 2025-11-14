@@ -1,5 +1,6 @@
 @use "../2-tools/functions" as f;
 @use "../1-settings/variables" as v;
+@use "../2-tools/mixins" as m;
 
 .home-itinerary {
     padding-block: 3rem;
@@ -12,6 +13,11 @@
         justify-items: center;
         margin-bottom: 2rem;
         text-align: center;
+
+        @include m.respond(mobile) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
     }
 
     &__img {

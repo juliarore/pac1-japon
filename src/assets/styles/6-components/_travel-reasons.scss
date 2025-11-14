@@ -1,4 +1,5 @@
 @use "../1-settings/variables" as v;
+@use "../2-tools/mixins" as m;
 
 .travel-reasons {
   padding-block: 3rem;
@@ -14,6 +15,11 @@
     gap: 2rem;
     justify-items: center;
     padding: 0;
+
+    @include m.respond(mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+    }
   }
 
   &__item {
@@ -26,6 +32,10 @@
     padding-bottom: 2rem;
     font-size: 3rem;
     color: v.$color-primary;
+
+    @include m.respond(tablet) {
+      padding-bottom: 1rem;
+    }
   }
 }
 

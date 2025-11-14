@@ -1,5 +1,6 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
 
 
 .itinerary-detail {
@@ -15,9 +16,25 @@
         margin-bottom: 5rem;
         text-align: justify;
 
+        @include m.respond(mobile) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "img"
+                "content";
+            gap: 0;
+            text-align: center;
+        }
+
         &--reverse {
             grid-template-columns: 1fr 1.3fr;
             grid-template-areas: "content img";
+
+            @include m.respond(mobile) {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "img"
+                    "content";
+            }
         }
     }
 
@@ -41,6 +58,7 @@
 
     &__text {
         margin-bottom: 1rem;
+        text-align: justify;
     }
 
     &__button {
