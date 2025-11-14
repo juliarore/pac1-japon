@@ -1,0 +1,13 @@
+@use "../1-settings/variables" as v;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == tablet {
+        @media (max-width: v.$bp-tablet) {
+            @content;
+        }
+    } @else if $breakpoint == mobile {
+        @media (max-width: v.$bp-mobile) {
+            @content;
+        }
+    }
+}
