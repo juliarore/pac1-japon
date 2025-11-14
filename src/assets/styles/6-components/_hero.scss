@@ -4,7 +4,8 @@
 .hero,
 .hero-itinerary,
 .hero-tokio,
-.hero-kioto-nara {
+.hero-kioto-nara,
+.hero-resources {
     position: relative;
     display: flex;
     align-items: center;
@@ -45,5 +46,10 @@
 } 
 
 .hero-kioto-nara {
-    background-image: url('../images/hero-kioto-nara.jpg');
+    background-image: url('../images/itinerary-kioto.jpg');
+}
+
+.hero-resources {
+    background-image: url('../images/hero-resources.jpg');
+    background-position: center top;
 }
