@@ -1,5 +1,6 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
 
 
 .button,
@@ -12,6 +13,14 @@ a.button-secondary {
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.2s ease;
+
+    @include m.respond(mobile) {
+        font-size: f.rem(16);
+    }
+
+    @include m.respond(tablet) {
+        font-size: f.rem(17);
+    }
 }
 
 .button,
