@@ -55,4 +55,10 @@
         margin: 0;
         }
     }
+
+    &__required {
+        font-weight: v.$fw-regular;
+        color: v.$color-primary;
+
+    }
 }

@@ -5,28 +5,28 @@
     <form class="contact__form" action="#" method="post">
 
         <div class="contact__itemform">
-        <label for="name" class="contact__label">Nombre</label>
+        <label for="name" class="contact__label">Nombre <span class="contact__required">*</span></label>
         <input type="text" id="name" name="name" class="contact__input" pattern="^[A-ZÁÉÍÓÚÑ][a-záéíóúñÁÉÍÓÚÑ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñÁÉÍÓÚÑ]*)?$"required aria-required="true">
         </div>
 
         <div class="contact__itemform">
-        <label for="email" class="contact__label">Correo electrónico</label>
+        <label for="email" class="contact__label">Correo electrónico <span class="contact__required">*</span></label>
         <input type="email" id="email" name="email" class="contact__input" required aria-required="true">
         </div>
 
         <div class="contact__itemform">
-        <label for="tel" class="contact__label">Teléfono</label>
+        <label for="tel" class="contact__label">Teléfono <span class="contact__required">*</span></label>
         <input type="tel" id="tel" name="tel" class="contact__input" pattern="^\d{9}$" required aria-required="true">
         </div>
 
         <div class="contact__itemform">
-        <label for="message" class="contact__label">Mensaje</label>
+        <label for="message" class="contact__label">Mensaje <span class="contact__required">*</span></label>
         <textarea id="message" name="message" class="contact__textarea" rows="8" cols="40" maxlength="2000" required aria-required="true"></textarea>
         </div>
 
         <div class="contact__checkbox">
         <input type="checkbox" name="privacy_policy" id="privacy_policy" class="contact__checkbox-input" required aria-required="true">
-        <label for="privacy_policy" class="contact__checkbox-label">He leído y acepto la <a href="#">política de privacidad</a>.</label>
+        <label for="privacy_policy" class="contact__checkbox-label">He leído y acepto la <a href="#">política de privacidad</a>. <span class="contact__required">*</span></label>
         </div>
 
         <div class="contact__button">
