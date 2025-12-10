@@ -36,6 +36,26 @@
 
 .hero {
     background-image: url('../images/hero-img.jpg');
+    
+    &__button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    
+    &__decoration {
+        width: f.rem(65);
+        height: auto;
+        margin-left: -1.35rem;
+        animation: rotate 10s linear infinite;
+        flex-shrink: 0;
+
+        @include m.respond(mobile) {
+            width: f.rem(55);
+            margin-left: -1.3rem;
+        }
+    }
 }
 
 .hero-itinerary {
@@ -77,4 +97,10 @@
 .hero-resources__subtitle,
 .hero-contact__subtitle {
     margin-bottom: 0;
-} 
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
