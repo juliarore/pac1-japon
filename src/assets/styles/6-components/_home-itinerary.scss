@@ -24,9 +24,16 @@
         width: 100%;
         height: auto;
         margin-bottom: 1rem;
-        object-fit: cover;
-        border-radius: 0.5rem;
+        object-fit: cover;      
         transition: opacity 0.3s ease;
+        clip-path: polygon(
+            0% 8%,
+            8% 0%, 
+            100% 0%,
+            100% 92%, 
+            92% 100%, 
+            0% 100%
+        );  
 
         &:hover {
             opacity: 0.8;
