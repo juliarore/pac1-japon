@@ -205,3 +205,11 @@
         }
     }
 }
+
+/* Active link style */
+.page-home .header__link[href="index.html"],
+.page-itinerary .header__link[href="itinerary.html"],
+.page-resources .header__link[href="resources.html"],
+.page-contact .header__link[href="contact.html"] {
+    font-weight: v.$fw-semi-bold;
+}
