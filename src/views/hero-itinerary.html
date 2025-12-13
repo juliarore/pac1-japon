@@ -1,9 +1,77 @@
 <section class="hero-itinerary">
     <picture class="hero-itinerary__picture">
+        <!-- Mobile -->
+        <source
+            media="(max-width: 768px)"
+            srcset="
+                ./assets/images/hero-itinerary-mobile.jpg?w=768&as=avif 768w,
+                ./assets/images/hero-itinerary-mobile.jpg?w=480&as=avif 480w
+            "
+            type="image/avif">
+        
+        <source
+            media="(max-width: 768px)"
+            srcset="
+                ./assets/images/hero-itinerary-mobile.jpg?w=768&as=webp 768w,
+                ./assets/images/hero-itinerary-mobile.jpg?w=480&as=webp 480w
+            "
+            type="image/webp">
+        
+        <source
+            media="(max-width: 768px)"
+            srcset="
+                ./assets/images/hero-itinerary-mobile.jpg?w=768 768w,
+                ./assets/images/hero-itinerary-mobile.jpg?w=480 480w
+            ">
+
+        <!-- Tablet -->
+        <source
+            media="(max-width: 1024px)"
+            srcset="
+                ./assets/images/hero-itinerary-tablet.jpg?w=1024&as=avif 1024w
+            "
+            type="image/avif">
+        
+        <source
+            media="(max-width: 1024px)"
+            srcset="
+                ./assets/images/hero-itinerary-tablet.jpg?w=1024&as=webp 1024w
+            "
+            type="image/webp">
+        
+        <source
+            media="(max-width: 1024px)"
+            srcset="
+                ./assets/images/hero-itinerary-tablet.jpg?w=1024 1024w
+            ">
+
+        <!-- Desktop -->
+        <source
+            srcset="
+                ./assets/images/hero-itinerary-desktop.jpg?w=1920&as=avif 1920w,
+                ./assets/images/hero-itinerary-desktop.jpg?w=1400&as=avif 1400w
+            "
+            type="image/avif">
+        
+        <source
+            srcset="
+                ./assets/images/hero-itinerary-desktop.jpg?w=1920&as=webp 1920w,
+                ./assets/images/hero-itinerary-desktop.jpg?w=1400&as=webp 1400w
+            "
+            type="image/webp">
+        
+        <source
+            srcset="
+                ./assets/images/hero-itinerary-desktop.jpg?w=1920 1920w,
+                ./assets/images/hero-itinerary-desktop.jpg?w=1400 1400w
+            ">
+
+        <!-- Fallback JPG -->    
         <img 
             src="./assets/images/hero-itinerary-desktop.jpg" 
             alt="Fosa de Chidorigafuchi en Tokio durante la temporada de cerezos en flor"
-            class="hero-itinerary__image">
+            class="hero-itinerary__image"
+            loading="eager">
     </picture>
 
     <div class="hero-itinerary__content animate__animated animate__fadeInDown">
