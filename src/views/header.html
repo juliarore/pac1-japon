@@ -3,7 +3,15 @@
 
         <!-- Logo -->
         <a href="/" class="header__logo">
-            <img src="./assets/images/logo.png" alt="Logotipo Descubriendo Japón" class="header__img">
+            <img 
+                src="./assets/images/logo.png?width=220"
+                srcset="
+                    ./assets/images/logo.png?width=220 1x,
+                    ./assets/images/logo.png?width=440 2x
+                "
+                alt="Logotipo Descubriendo Japón" 
+                class="header__img"
+                loading="eager">
         </a>
 
         <!-- Burguer menu button -->
