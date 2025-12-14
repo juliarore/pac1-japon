@@ -1,10 +1,51 @@
-    <section class="itinerary-detail" id="itinerary-detail">
+<section class="itinerary-detail" id="itinerary-detail">
 
-        <!-- Etapa 1 -->
+        <!-- Etapa 1 - TOKIO -->
         <div class="itinerary-detail__stage animate__animated animate__fadeIn animate__delay-1s">
             <a href="./tokio.html" class="itinerary-detail__link">
-                <img src="./assets/images/itinerary-tokio.jpg" class="itinerary-detail__img"
-                    alt="Fotografía de la ciudad de Tokio de noche">
+                <picture class="itinerary-detail__picture">
+                    <!-- AVIF -->
+                    <source
+                        type="image/avif"
+                        srcset="
+                            ./assets/images/itinerary-tokio.jpg?as=avif&width=360 360w,
+                            ./assets/images/itinerary-tokio.jpg?as=avif&width=480 480w,
+                            ./assets/images/itinerary-tokio.jpg?as=avif&width=650 650w,
+                            ./assets/images/itinerary-tokio.jpg?as=avif&width=720 720w,
+                            ./assets/images/itinerary-tokio.jpg?as=avif&width=960 960w,
+                            ./assets/images/itinerary-tokio.jpg?as=avif&width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px">
+
+                    <!-- WebP -->
+                    <source
+                        type="image/webp"
+                        srcset="
+                            ./assets/images/itinerary-tokio.jpg?as=webp&width=360 360w,
+                            ./assets/images/itinerary-tokio.jpg?as=webp&width=480 480w,
+                            ./assets/images/itinerary-tokio.jpg?as=webp&width=650 650w,
+                            ./assets/images/itinerary-tokio.jpg?as=webp&width=720 720w,
+                            ./assets/images/itinerary-tokio.jpg?as=webp&width=960 960w,
+                            ./assets/images/itinerary-tokio.jpg?as=webp&width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px">
+
+                    <!-- JPG fallback -->
+                    <img
+                        src="./assets/images/itinerary-tokio.jpg?width=650"
+                        srcset="
+                            ./assets/images/itinerary-tokio.jpg?width=360 360w,
+                            ./assets/images/itinerary-tokio.jpg?width=480 480w,
+                            ./assets/images/itinerary-tokio.jpg?width=650 650w,
+                            ./assets/images/itinerary-tokio.jpg?width=720 720w,
+                            ./assets/images/itinerary-tokio.jpg?width=960 960w,
+                            ./assets/images/itinerary-tokio.jpg?width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px"
+                        alt="Fotografía de la ciudad de Tokio de noche"
+                        class="itinerary-detail__img"
+                        loading="lazy">
+                </picture>
             </a>
 
             <div class="itinerary-detail__content">
@@ -20,11 +61,52 @@
             </div>
         </div>
 
-        <!-- Etapa 2 -->
+        <!-- Etapa 2 - KIOTO -->
         <div class="itinerary-detail__stage itinerary-detail__stage--reverse animate__animated animate__fadeIn animate__delay-2s">
             <a href="./kioto-nara.html" class="itinerary-detail__link">
-                <img src="./assets/images/itinerary-kioto.jpg" class="itinerary-detail__img"
-                    alt="Fotografía de un templo tradicional en Kioto al atardecer">
+                <picture class="itinerary-detail__picture">
+                    <!-- AVIF -->
+                    <source
+                        type="image/avif"
+                        srcset="
+                            ./assets/images/itinerary-kioto.jpg?as=avif&width=360 360w,
+                            ./assets/images/itinerary-kioto.jpg?as=avif&width=480 480w,
+                            ./assets/images/itinerary-kioto.jpg?as=avif&width=650 650w,
+                            ./assets/images/itinerary-kioto.jpg?as=avif&width=720 720w,
+                            ./assets/images/itinerary-kioto.jpg?as=avif&width=960 960w,
+                            ./assets/images/itinerary-kioto.jpg?as=avif&width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px">
+
+                    <!-- WebP -->
+                    <source
+                        type="image/webp"
+                        srcset="
+                            ./assets/images/itinerary-kioto.jpg?as=webp&width=360 360w,
+                            ./assets/images/itinerary-kioto.jpg?as=webp&width=480 480w,
+                            ./assets/images/itinerary-kioto.jpg?as=webp&width=650 650w,
+                            ./assets/images/itinerary-kioto.jpg?as=webp&width=720 720w,
+                            ./assets/images/itinerary-kioto.jpg?as=webp&width=960 960w,
+                            ./assets/images/itinerary-kioto.jpg?as=webp&width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px">
+
+                    <!-- JPG fallback -->
+                    <img
+                        src="./assets/images/itinerary-kioto.jpg?width=650"
+                        srcset="
+                            ./assets/images/itinerary-kioto.jpg?width=360 360w,
+                            ./assets/images/itinerary-kioto.jpg?width=480 480w,
+                            ./assets/images/itinerary-kioto.jpg?width=650 650w,
+                            ./assets/images/itinerary-kioto.jpg?width=720 720w,
+                            ./assets/images/itinerary-kioto.jpg?width=960 960w,
+                            ./assets/images/itinerary-kioto.jpg?width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 640px"
+                        alt="Fotografía de un templo tradicional en Kioto al atardecer"
+                        class="itinerary-detail__img"
+                        loading="lazy">
+                </picture>
             </a>
 
             <div class="itinerary-detail__content">
@@ -42,11 +124,52 @@
             </div>
         </div>
 
-        <!-- Etapa 3 -->
+        <!-- Etapa 3 - OSAKA -->
         <div class="itinerary-detail__stage animate__animated animate__fadeIn animate__delay-3s">
             <a href="#" class="itinerary-detail__link">
-                <img src="./assets/images/itinerary-osaka.jpg" class="itinerary-detail__img"
-                    alt="Fotografía de la ciudad de Osaka">
+                <picture class="itinerary-detail__picture">
+                    <!-- AVIF -->
+                    <source
+                        type="image/avif"
+                        srcset="
+                            ./assets/images/itinerary-osaka.jpg?as=avif&width=360 360w,
+                            ./assets/images/itinerary-osaka.jpg?as=avif&width=480 480w,
+                            ./assets/images/itinerary-osaka.jpg?as=avif&width=650 650w,
+                            ./assets/images/itinerary-osaka.jpg?as=avif&width=720 720w,
+                            ./assets/images/itinerary-osaka.jpg?as=avif&width=960 960w,
+                            ./assets/images/itinerary-osaka.jpg?as=avif&width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px">
+
+                    <!-- WebP -->
+                    <source
+                        type="image/webp"
+                        srcset="
+                            ./assets/images/itinerary-osaka.jpg?as=webp&width=360 360w,
+                            ./assets/images/itinerary-osaka.jpg?as=webp&width=480 480w,
+                            ./assets/images/itinerary-osaka.jpg?as=webp&width=650 650w,
+                            ./assets/images/itinerary-osaka.jpg?as=webp&width=720 720w,
+                            ./assets/images/itinerary-osaka.jpg?as=webp&width=960 960w,
+                            ./assets/images/itinerary-osaka.jpg?as=webp&width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px">
+
+                    <!-- JPG fallback -->
+                    <img
+                        src="./assets/images/itinerary-osaka.jpg?width=650"
+                        srcset="
+                            ./assets/images/itinerary-osaka.jpg?width=360 360w,
+                            ./assets/images/itinerary-osaka.jpg?width=480 480w,
+                            ./assets/images/itinerary-osaka.jpg?width=650 650w,
+                            ./assets/images/itinerary-osaka.jpg?width=720 720w,
+                            ./assets/images/itinerary-osaka.jpg?width=960 960w,
+                            ./assets/images/itinerary-osaka.jpg?width=1280 1280w
+                        "
+                        sizes="(max-width: 768px) 90vw, 650px"
+                        alt="Fotografía de la ciudad de Osaka"
+                        class="itinerary-detail__img"
+                        loading="lazy">
+                </picture>
             </a>
 
             <div class="itinerary-detail__content">
