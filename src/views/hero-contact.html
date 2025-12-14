@@ -1,9 +1,43 @@
 <section class="hero-contact">
     <picture class="hero-contact__picture">
-        <img 
-            src="./assets/images/hero-contact.jpg" 
+        <!-- AVIF -->
+        <source
+            type="image/avif"
+            srcset="
+                ./assets/images/hero-contact.jpg?as=avif&width=480 480w,
+                ./assets/images/hero-contact.jpg?as=avif&width=768 768w,
+                ./assets/images/hero-contact.jpg?as=avif&width=1024 1024w,
+                ./assets/images/hero-contact.jpg?as=avif&width=1440 1440w,
+                ./assets/images/hero-contact.jpg?as=avif&width=1920 1920w,
+            "
+            sizes="100vw">
+
+        <!-- WebP -->
+        <source
+            type="image/webp"
+            srcset="
+                ./assets/images/hero-contact.jpg?as=webp&width=480 480w,
+                ./assets/images/hero-contact.jpg?as=webp&width=768 768w,
+                ./assets/images/hero-contact.jpg?as=webp&width=1024 1024w,
+                ./assets/images/hero-contact.jpg?as=webp&width=1440 1440w,
+                ./assets/images/hero-contact.jpg?as=webp&width=1920 1920w,
+            "
+            sizes="100vw">
+
+        <!-- JPG fallback -->
+        <img
+            src="./assets/images/hero-contact.jpg?width=1024"
+            srcset="
+                ./assets/images/hero-contact.jpg?width=480 480w,
+                ./assets/images/hero-contact.jpg?width=768 768w,
+                ./assets/images/hero-contact.jpg?width=1024 1024w,
+                ./assets/images/hero-contact.jpg?width=1440 1440w,
+                
+            "
+            sizes="100vw"
             alt="Flores de cerezo rosas en primavera"
-            class="hero-contact__image">
+            class="hero-contact__image"
+            loading="eager">
     </picture>
 
     <div class="hero-contact__content animate__animated animate__fadeInDown">
