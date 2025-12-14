@@ -2,30 +2,159 @@
     <h2 class="o-title--h2">Itinerario del viaje</h2>
 
     <div class="home-itinerary__grid">
+        <!-- TOKIO CARD -->
         <div class="home-itinerary__card">
             <a href="./tokio.html" class="home-itinerary__link">
-                <img src="./assets/images/tokio-card.jpg" class="home-itinerary__img"
-                    alt="Fotografía de la ciudad de Tokio de noche">
+                <picture class="home-itinerary__picture">
+                    <!-- AVIF -->
+                    <source 
+                        type="image/avif"
+                        srcset="
+                            ./assets/images/tokio-card.jpg?as=avif&width=340 340w,
+                            ./assets/images/tokio-card.jpg?as=avif&width=230 230w,
+                            ./assets/images/tokio-card.jpg?as=avif&width=380 380w,
+                            ./assets/images/tokio-card.jpg?as=avif&width=680 680w,
+                            ./assets/images/tokio-card.jpg?as=avif&width=460 460w,
+                            ./assets/images/tokio-card.jpg?as=avif&width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px">
+
+                    <!-- WebP -->
+                    <source 
+                        type="image/webp"
+                        srcset="
+                            ./assets/images/tokio-card.jpg?as=webp&width=340 340w,
+                            ./assets/images/tokio-card.jpg?as=webp&width=230 230w,
+                            ./assets/images/tokio-card.jpg?as=webp&width=380 380w,
+                            ./assets/images/tokio-card.jpg?as=webp&width=680 680w,
+                            ./assets/images/tokio-card.jpg?as=webp&width=460 460w,
+                            ./assets/images/tokio-card.jpg?as=webp&width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px">
+
+                    <!-- JPEG fallback -->
+                    <img
+                        src="./assets/images/tokio-card.jpg?width=380"
+                        srcset="
+                            ./assets/images/tokio-card.jpg?width=340 340w,
+                            ./assets/images/tokio-card.jpg?width=230 230w,
+                            ./assets/images/tokio-card.jpg?width=380 380w,
+                            ./assets/images/tokio-card.jpg?width=680 680w,
+                            ./assets/images/tokio-card.jpg?width=460 460w,
+                            ./assets/images/tokio-card.jpg?width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px"
+                        alt="Fotografía de la ciudad de Tokio de noche"
+                        class="home-itinerary__img"
+                        loading="lazy">
+                </picture>
+
                 <h3 class="o-title--h3 home-itinerary__title">Días 1-5: Tokio</h3>
             </a>
             <p class="home-itinerary__text">Empieza el viaje en la ciudad que nunca duerme. Entre luces, templos y calles
                 infinitas, Tokio te envuelve desde el primer día.</p>
         </div>
 
+        <!-- KIOTO CARD -->
         <div class="home-itinerary__card">
             <a href="./kioto-nara.html" class="home-itinerary__link">
-                <img src="./assets/images/kioto-card.jpg" class="home-itinerary__img"
-                    alt="Fotografía de una calle tradicional japonesa en Kioto">
+                <picture class="home-itinerary__picture">
+                    <!-- AVIF -->
+                    <source 
+                        type="image/avif"
+                        srcset="
+                            ./assets/images/kioto-card.jpg?as=avif&width=340 340w,
+                            ./assets/images/kioto-card.jpg?as=avif&width=230 230w,
+                            ./assets/images/kioto-card.jpg?as=avif&width=380 380w,
+                            ./assets/images/kioto-card.jpg?as=avif&width=680 680w,
+                            ./assets/images/kioto-card.jpg?as=avif&width=460 460w,
+                            ./assets/images/kioto-card.jpg?as=avif&width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px">      
+
+                    <!-- WebP -->
+                    <source 
+                        type="image/webp"
+                        srcset="
+                            ./assets/images/kioto-card.jpg?as=webp&width=340 340w,
+                            ./assets/images/kioto-card.jpg?as=webp&width=230 230w,
+                            ./assets/images/kioto-card.jpg?as=webp&width=380 380w,
+                            ./assets/images/kioto-card.jpg?as=webp&width=680 680w,
+                            ./assets/images/kioto-card.jpg?as=webp&width=460 460w,
+                            ./assets/images/kioto-card.jpg?as=webp&width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px">
+
+                    <!-- JPEG fallback -->
+                    <img
+                        src="./assets/images/kioto-card.jpg?width=380"
+                        srcset="
+                            ./assets/images/kioto-card.jpg?width=340 340w,
+                            ./assets/images/kioto-card.jpg?width=230 230w,
+                            ./assets/images/kioto-card.jpg?width=380 380w,
+                            ./assets/images/kioto-card.jpg?width=680 680w,
+                            ./assets/images/kioto-card.jpg?width=460 460w,
+                            ./assets/images/kioto-card.jpg?width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px"
+                        alt="Fotografía de una calle tradicional japonesa en Kioto"
+                        class="home-itinerary__img"
+                        loading="lazy">
+                </picture>
+
                 <h3 class="o-title--h3 home-itinerary__title">Días 6-10: Kioto y Nara</h3>
             </a>
             <p class="home-itinerary__text">Pasea entre templos, jardines y callejones llenos de historia. Kioto y Nara
                 muestran la calma y la belleza del Japón más tradicional.</p>
         </div>
 
+        <!-- OSAKA CARD -->
         <div class="home-itinerary__card">
             <a href="/" class="home-itinerary__link">
-                <img src="./assets/images/osaka-card.jpg" class="home-itinerary__img"
-                    alt="Fotografía de un castillo japonés en Osaka">
+                <picture class="home-itinerary__picture">
+                    <!-- AVIF -->
+                    <source 
+                        type="image/avif"
+                        srcset="
+                            ./assets/images/osaka-card.jpg?as=avif&width=340 340w,
+                            ./assets/images/osaka-card.jpg?as=avif&width=230 230w,
+                            ./assets/images/osaka-card.jpg?as=avif&width=380 380w,
+                            ./assets/images/osaka-card.jpg?as=avif&width=680 680w,
+                            ./assets/images/osaka-card.jpg?as=avif&width=460 460w,
+                            ./assets/images/osaka-card.jpg?as=avif&width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px">
+
+                    <!-- WebP -->
+                    <source 
+                        type="image/webp"
+                        srcset="
+                            ./assets/images/osaka-card.jpg?as=webp&width=340 340w,
+                            ./assets/images/osaka-card.jpg?as=webp&width=230 230w,
+                            ./assets/images/osaka-card.jpg?as=webp&width=380 380w,
+                            ./assets/images/osaka-card.jpg?as=webp&width=680 680w,
+                            ./assets/images/osaka-card.jpg?as=webp&width=460 460w,
+                            ./assets/images/osaka-card.jpg?as=webp&width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px">
+
+                    <!-- JPEG fallback -->
+                    <img
+                        src="./assets/images/osaka-card.jpg?width=380"
+                        srcset="
+                            ./assets/images/osaka-card.jpg?width=340 340w,
+                            ./assets/images/osaka-card.jpg?width=230 230w,
+                            ./assets/images/osaka-card.jpg?width=380 380w,
+                            ./assets/images/osaka-card.jpg?width=680 680w,
+                            ./assets/images/osaka-card.jpg?width=460 460w,
+                            ./assets/images/osaka-card.jpg?width=760 760w
+                        "
+                        sizes="(max-width: 768px) 340px, (max-width: 1024px) 230px, 380px"
+                        alt="Fotografía de un castillo japonés en Osaka"
+                        class="home-itinerary__img"
+                        loading="lazy">
+                </picture>
+                
                 <h3 class="o-title--h3 home-itinerary__title">Días 11-15: Osaka</h3>
             </a>
             <p class="home-itinerary__text">Termina el viaje con el Japón más alegre y auténtico. Osaka te espera con su
