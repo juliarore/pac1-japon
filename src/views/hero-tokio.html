@@ -3,83 +3,61 @@
         <!-- Mobile -->
         <source
             media="(max-width: 768px)"
-            srcset="
-                ./assets/images/hero-tokio-mobile.jpg?w=768&as=avif 768w,
-                ./assets/images/hero-tokio-mobile.jpg?w=480&as=avif 480w
-            "
-            sizes="100vw"
+            srcset="./assets/images/hero-tokio-mobile.jpg?w=768&as=avif"
             type="image/avif">
         
         <source
             media="(max-width: 768px)"
-            srcset="
-                ./assets/images/hero-tokio-mobile.jpg?w=768&as=webp 768w,
-                ./assets/images/hero-tokio-mobile.jpg?w=480&as=webp 480w
-            "
-            sizes="100vw"
+            srcset="./assets/images/hero-tokio-mobile.jpg?w=768&as=webp"
             type="image/webp">
         
         <source
             media="(max-width: 768px)"
-            srcset="
-                ./assets/images/hero-tokio-mobile.jpg?w=768 768w,
-                ./assets/images/hero-tokio-mobile.jpg?w=480 480w
-            "
-            sizes="100vw">
+            srcset="./assets/images/hero-tokio-mobile.jpg?w=768">
 
         <!-- Tablet -->
         <source
             media="(max-width: 1024px)"
-            srcset="
-                ./assets/images/hero-tokio-tablet.jpg?w=1024&as=avif 1024w
-            "
-            sizes="100vw"
+            srcset="./assets/images/hero-tokio-tablet.jpg?w=1024&as=avif"
             type="image/avif">
         
         <source
             media="(max-width: 1024px)"
-            srcset="
-                ./assets/images/hero-tokio-tablet.jpg?w=1024&as=webp 1024w
-            "
-            sizes="100vw"
+            srcset="./assets/images/hero-tokio-tablet.jpg?w=1024&as=webp"
             type="image/webp">
         
         <source
             media="(max-width: 1024px)"
-            srcset="
-                ./assets/images/hero-tokio-tablet.jpg?w=1024 1024w
-            "
-            sizes="100vw">
+            srcset="./assets/images/hero-tokio-tablet.jpg?w=1024">
 
         <!-- Desktop -->
         <source
             srcset="
-                ./assets/images/hero-tokio-desktop.jpg?w=1920&as=avif 1920w,
-                ./assets/images/hero-tokio-desktop.jpg?w=1400&as=avif 1400w
+                ./assets/images/hero-tokio-desktop.jpg?w=1920&as=avif 1x,
+                ./assets/images/hero-tokio-desktop.jpg?w=3840&as=avif 2x
             "
-            sizes="100vw"
             type="image/avif">
         
         <source
             srcset="
-                ./assets/images/hero-tokio-desktop.jpg?w=1920&as=webp 1920w,
-                ./assets/images/hero-tokio-desktop.jpg?w=1400&as=webp 1400w
+                ./assets/images/hero-tokio-desktop.jpg?w=1920&as=webp 1x,
+                ./assets/images/hero-tokio-desktop.jpg?w=3840&as=webp 2x
             "
-            sizes="100vw"
             type="image/webp">
         
         <source
             srcset="
-                ./assets/images/hero-tokio-desktop.jpg?w=1920 1920w,
-                ./assets/images/hero-tokio-desktop.jpg?w=1400 1400w
-            "
-            sizes="100vw">
+                ./assets/images/hero-tokio-desktop.jpg?w=1920 1x,
+                ./assets/images/hero-tokio-desktop.jpg?w=3840 2x
+            ">
 
         <!-- Fallback JPG -->        
         <img
-            src="./assets/images/hero-tokio-desktop.jpg"
+            src="./assets/images/hero-tokio-desktop.jpg?w=1920"
             alt="Vista de Tokio al atardecer con la torre Tokyo Skytree"
             class="hero-tokio__image"
+            width="1920"
+            height="1080"
             loading="eager">
     </picture>
 
