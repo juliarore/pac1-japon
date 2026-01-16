@@ -1,42 +1,63 @@
 <section class="hero-contact">
     <picture class="hero-contact__picture">
-        <!-- AVIF -->
+        <!-- Mobile -->
         <source
-            type="image/avif"
-            srcset="
-                ./assets/images/hero-contact.jpg?as=avif&width=480 480w,
-                ./assets/images/hero-contact.jpg?as=avif&width=768 768w,
-                ./assets/images/hero-contact.jpg?as=avif&width=1024 1024w,
-                ./assets/images/hero-contact.jpg?as=avif&width=1440 1440w,
-                ./assets/images/hero-contact.jpg?as=avif&width=1920 1920w,
-            "
-            sizes="100vw">
-
-        <!-- WebP -->
+            media="(max-width: 768px)"
+            srcset="./assets/images/hero-contact.jpg?w=768&as=avif"
+            type="image/avif">
+        
         <source
-            type="image/webp"
-            srcset="
-                ./assets/images/hero-contact.jpg?as=webp&width=480 480w,
-                ./assets/images/hero-contact.jpg?as=webp&width=768 768w,
-                ./assets/images/hero-contact.jpg?as=webp&width=1024 1024w,
-                ./assets/images/hero-contact.jpg?as=webp&width=1440 1440w,
-                ./assets/images/hero-contact.jpg?as=webp&width=1920 1920w,
-            "
-            sizes="100vw">
+            media="(max-width: 768px)"
+            srcset="./assets/images/hero-contact.jpg?w=768&as=webp"
+            type="image/webp">
+        
+        <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/hero-contact.jpg?w=768">
 
-        <!-- JPG fallback -->
+        <!-- Tablet -->
+        <source
+            media="(max-width: 1024px)"
+            srcset="./assets/images/hero-contact.jpg?w=1024&as=avif"
+            type="image/avif">
+        
+        <source
+            media="(max-width: 1024px)"
+            srcset="./assets/images/hero-contact.jpg?w=1024&as=webp"
+            type="image/webp">
+        
+        <source
+            media="(max-width: 1024px)"
+            srcset="./assets/images/hero-contact.jpg?w=1024">
+
+        <!-- Desktop -->
+        <source
+            srcset="
+                ./assets/images/hero-contact.jpg?w=1600&as=avif 1x,
+                ./assets/images/hero-contact.jpg?w=3200&as=avif 2x
+            "
+            type="image/avif">
+        
+        <source
+            srcset="
+                ./assets/images/hero-contact.jpg?w=1600&as=webp 1x,
+                ./assets/images/hero-contact.jpg?w=3200&as=webp 2x
+            "
+            type="image/webp">
+        
+        <source
+            srcset="
+                ./assets/images/hero-contact.jpg?w=1600 1x,
+                ./assets/images/hero-contact.jpg?w=3200 2x
+            ">
+
+        <!-- Fallback JPG -->
         <img
-            src="./assets/images/hero-contact.jpg?width=1024"
-            srcset="
-                ./assets/images/hero-contact.jpg?width=480 480w,
-                ./assets/images/hero-contact.jpg?width=768 768w,
-                ./assets/images/hero-contact.jpg?width=1024 1024w,
-                ./assets/images/hero-contact.jpg?width=1440 1440w,
-                
-            "
-            sizes="100vw"
+            src="./assets/images/hero-contact.jpg?w=1600"
             alt="Flores de cerezo rosas en primavera"
             class="hero-contact__image"
+            width="1920"
+            height="1080"
             loading="eager"
             fetchpriority="high">
     </picture>
