@@ -4,65 +4,162 @@
     <div class="tokio-intro__swiper city-intro__swiper swiper animate__animated animate__fadeIn animate__delay-2s">
         <div class="swiper-wrapper">
 
+            <!-- SLIDE 1 -->
             <div class="swiper-slide tokio-intro__slide city-intro__slide">
-                <img
-                    src="./assets/images/tokio-intro-1.jpg?width=1200"
-                    srcset="
-                        ./assets/images/tokio-intro-1.jpg?width=480 480w,
-                        ./assets/images/tokio-intro-1.jpg?width=768 768w,
-                        ./assets/images/tokio-intro-1.jpg?width=1024 1024w,
-                        ./assets/images/tokio-intro-1.jpg?width=1200 1200w
-                    "
-                    sizes="(max-width: 768px) 90vw, 1200px"
-                    class="tokio-intro__image city-intro__image"
-                    alt="Atardecer en un canal con cerezos y una barca con pasajeros."
-                    loading="lazy">
+                <picture>
+                    <!-- Mobile: AVIF vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-1-mobile.jpg?width=400&as=avif">
+
+                    <!-- Mobile: WebP vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-1-mobile.jpg?width=400&as=webp">
+
+                    <!-- Mobile: JPG vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="./assets/images/tokio-intro-1-mobile.jpg?width=400">
+
+                    <!-- Tablet/Desktop: AVIF horizontal -->
+                    <source
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-1.jpg?width=1200&as=avif">
+
+                    <!-- Tablet/Desktop: WebP horizontal -->
+                    <source
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-1.jpg?width=1200&as=webp">
+
+                    <!-- Fallback JPG -->
+                    <img
+                        src="./assets/images/tokio-intro-1.jpg?width=1200"
+                        class="tokio-intro__image city-intro__image"
+                        alt="Atardecer en un canal con cerezos y una barca con pasajeros."
+                        loading="lazy">
+                </picture>
             </div>
 
+            <!-- SLIDE 2 -->
             <div class="swiper-slide tokio-intro__slide city-intro__slide">
-                <img
-                    src="./assets/images/tokio-intro-2.jpg?width=1200"
-                    srcset="
-                        ./assets/images/tokio-intro-2.jpg?width=480 480w,
-                        ./assets/images/tokio-intro-2.jpg?width=768 768w,
-                        ./assets/images/tokio-intro-2.jpg?width=1024 1024w,
-                        ./assets/images/tokio-intro-2.jpg?width=1200 1200w
-                    "
-                    sizes="(max-width: 768px) 90vw, 1200px"
-                    class="tokio-intro__image city-intro__image"
-                    alt="Cruce de Shibuya en Tokio con peatones y anuncios luminosos."
-                    loading="lazy">
+                <picture>
+                    <!-- Mobile: AVIF vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-2-mobile.jpg?width=400&as=avif">
+
+                    <!-- Mobile: WebP vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-2-mobile.jpg?width=400&as=webp">
+
+                    <!-- Mobile: JPG vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="./assets/images/tokio-intro-2-mobile.jpg?width=400">
+
+                    <!-- Tablet/Desktop: AVIF horizontal -->
+                    <source
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-2.jpg?width=1200&as=avif">
+
+                    <!-- Tablet/Desktop: WebP horizontal -->
+                    <source
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-2.jpg?width=1200&as=webp">
+
+                    <!-- Fallback JPG -->
+                    <img
+                        src="./assets/images/tokio-intro-2.jpg?width=1200"
+                        class="tokio-intro__image city-intro__image"
+                        alt="Cruce de Shibuya en Tokio con peatones y anuncios luminosos."
+                        loading="lazy">
+                </picture>
             </div>
 
+            <!-- SLIDE 3 -->
             <div class="swiper-slide tokio-intro__slide city-intro__slide">
-                <img
-                    src="./assets/images/tokio-intro-3.jpg?width=1200"
-                    srcset="
-                        ./assets/images/tokio-intro-3.jpg?width=480 480w,
-                        ./assets/images/tokio-intro-3.jpg?width=768 768w,
-                        ./assets/images/tokio-intro-3.jpg?width=1024 1024w,
-                        ./assets/images/tokio-intro-3.jpg?width=1200 1200w
-                    "
-                    sizes="(max-width: 768px) 90vw, 1200px"
-                    class="tokio-intro__image city-intro__image"
-                    alt="Linternas de papel en un festival nocturno de floración de cerezos (sakura)."
-                    loading="lazy">
+                <picture>
+                    <!-- Mobile: AVIF vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-3-mobile.jpg?width=400&as=avif">
+
+                    <!-- Mobile: WebP vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-3-mobile.jpg?width=400&as=webp">
+
+                    <!-- Mobile: JPG vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="./assets/images/tokio-intro-3-mobile.jpg?width=400">
+
+                    <!-- Tablet/Desktop: AVIF horizontal -->
+                    <source
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-3.jpg?width=1200&as=avif">
+
+                    <!-- Tablet/Desktop: WebP horizontal -->
+                    <source
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-3.jpg?width=1200&as=webp">
+
+                    <!-- Fallback JPG -->
+                    <img
+                        src="./assets/images/tokio-intro-3.jpg?width=1200"
+                        class="tokio-intro__image city-intro__image"
+                        alt="Linternas de papel en un festival nocturno de floración de cerezos (sakura)."
+                        loading="lazy">
+                </picture>
             </div>
 
+            <!-- SLIDE 4 -->
             <div class="swiper-slide tokio-intro__slide city-intro__slide">
-                <img
-                    src="./assets/images/tokio-intro-4.jpg?width=1200"
-                    srcset="
-                        ./assets/images/tokio-intro-4.jpg?width=480 480w,
-                        ./assets/images/tokio-intro-4.jpg?width=768 768w,
-                        ./assets/images/tokio-intro-4.jpg?width=1024 1024w,
-                        ./assets/images/tokio-intro-4.jpg?width=1200 1200w
-                    "
-                    sizes="(max-width: 768px) 90vw, 1200px"
-                    class="tokio-intro__image city-intro__image"
-                    alt="Foso de Chidorigafuchi en Tokio, durante la temporada de floración de los cerezos."
-                    loading="lazy">
+                <picture>
+                    <!-- Mobile: AVIF vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-4-mobile.jpg?width=400&as=avif">
+
+                    <!-- Mobile: WebP vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-4-mobile.jpg?width=400&as=webp">
+
+                    <!-- Mobile: JPG vertical -->
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="./assets/images/tokio-intro-4-mobile.jpg?width=400">
+
+                    <!-- Tablet/Desktop: AVIF horizontal -->
+                    <source
+                        type="image/avif"
+                        srcset="./assets/images/tokio-intro-4.jpg?width=1200&as=avif">
+
+                    <!-- Tablet/Desktop: WebP horizontal -->
+                    <source
+                        type="image/webp"
+                        srcset="./assets/images/tokio-intro-4.jpg?width=1200&as=webp">
+
+                    <!-- Fallback JPG -->
+                    <img
+                        src="./assets/images/tokio-intro-4.jpg?width=1200"
+                        class="tokio-intro__image city-intro__image"
+                        alt="Foso de Chidorigafuchi en Tokio, durante la temporada de floración de los cerezos."
+                        loading="lazy">
+                </picture>
             </div>
+
         </div>
 
         <div class="tokio-intro__pagination city-intro__pagination swiper-pagination"></div>

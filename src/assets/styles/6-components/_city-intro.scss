@@ -1,5 +1,6 @@
 @use "../1-settings/variables" as v;
 @use "../2-tools/functions" as f;
+@use "../2-tools/mixins" as m;
 
 .city-intro {
     padding-block: 3rem;
@@ -19,6 +20,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include m.respond(mobile) {
+            align-items: normal;
+        }
     }
 
     &__image {
