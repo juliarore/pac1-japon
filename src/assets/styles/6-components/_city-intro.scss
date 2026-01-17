@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: center;
 
-        @include m.respond(mobile) {
+        @include m.respond(tablet) {
             align-items: normal;
         }
     }
